@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import PageWrapper from "./components/PageWrapper";
-import Home from "./components/Pages/Home";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
+
+// Pages:
+import Home from "./components/Pages/Home";
+import About from "./components/Pages/About";
 
 class App extends Component {
   render() {
@@ -11,7 +14,9 @@ class App extends Component {
       <Router>
         <PageWrapper>
           <Routes>
-            <Route path="/" element={<Home />} />
+            {/* <Route path="/" element={<Home />} /> */}
+            <Route exact={true} path="/" Component={Home} />
+            <Route path="/about" Component={About} />
           </Routes>
         </PageWrapper>
       </Router>
