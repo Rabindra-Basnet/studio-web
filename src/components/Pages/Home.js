@@ -6,6 +6,7 @@ import image from "../assets/img/header-bg.jpg";
 import Services from "../common/Services";
 import Portfolio from "../common/Portfolio";
 import Timeline from "../common/Timeline";
+import Team from "../common/Team";
 
 class Home extends Component {
   render() {
@@ -22,6 +23,7 @@ class Home extends Component {
         <Services />
         <Portfolio />
         <Timeline />
+        <Team />
       </div>
     );
   }
