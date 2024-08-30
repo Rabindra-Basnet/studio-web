@@ -8,6 +8,7 @@ import Portfolio from "../common/Portfolio";
 import Timeline from "../common/Timeline";
 import Team from "../common/Team";
 import Contact from "./Contact";
+import Footer from "../common/Footer";
 
 class Home extends Component {
   render() {
@@ -26,6 +27,7 @@ class Home extends Component {
         <Timeline />
         <Team />
         <Contact />
+        <Footer />
       </div>
     );
   }

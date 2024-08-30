@@ -3,6 +3,7 @@ import Header from "../common/Header";
 import image from "../assets/img/about.jpg";
 import Timeline from "../common/Timeline";
 import Team from "../common/Team";
+import Footer from "../common/Footer";
 
 class About extends Component {
   render() {
@@ -19,6 +20,7 @@ class About extends Component {
         />
         <Timeline />
         <Team />
+        <Footer />
       </div>
     );
   }

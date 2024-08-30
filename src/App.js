@@ -8,6 +8,7 @@ import "./App.css";
 import Home from "./components/Pages/Home";
 import About from "./components/Pages/About";
 import Contact from "./components/Pages/Contact";
+import Portfolio from "./components/common/Portfolio";
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
             <Route exact={true} path="/" Component={Home} />
             <Route path="/about" Component={About} />
             <Route path="/contact" Component={Contact} />
+            <Route path="/portfolio" Component={Portfolio} />
           </Routes>
         </PageWrapper>
       </Router>
